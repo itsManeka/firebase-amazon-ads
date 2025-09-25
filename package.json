@@ -1,13 +1,32 @@
 {
   "name": "firebase-amazon-ads",
   "version": "1.0.0",
+  "description": "API que integra Firebase Firestore com Amazon Product Advertising API (PAAPI 5.0) para buscar e armazenar informações de produtos da Amazon",
   "main": "index.js",
+  "keywords": [
+    "amazon",
+    "firebase",
+    "api",
+    "paapi",
+    "products",
+    "advertising",
+    "node.js",
+    "express"
+  ],
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Emanuel Ozorio",
   "license": "ISC",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsManeka/firebase-amazon-ads.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
@@ -15,5 +34,8 @@
     "firebase-admin": "^13.3.0",
     "node-fetch": "^3.3.2",
     "paapi5-nodejs-sdk": "^1.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
