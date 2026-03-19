@@ -58,7 +58,7 @@ app.get('/health', (req, res) => {
 app.use('/amazon-products', require('./routes/amazon-products'));
 
 // Middleware para tratar rotas não encontradas
-app.use('*', (req, res) => {
+app.use('/{*path}', (req, res) => {
     res.status(404).json({
         error: 'Endpoint não encontrado',
         path: req.originalUrl,
